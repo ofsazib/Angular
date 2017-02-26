@@ -1,0 +1,33 @@
+<h3>This is view 1</h3>
+
+<h2>Input Controller</h2>
+<div ng-controller="numController as post" class="form-group">
+  <label for="usr">Input Number:<h6>(only number will be taken for key press)</h6></label>
+  <form ng-submit="post.addMessage(num)" name="myForm">
+    <input type="text" ng-model="num" class="form-control" name="myInput">
+    <button type="submit">Click here to pass the data to next route</button>
+  </form>
+</div>
+
+
+<h2>Output Controller</h2>
+<div ng-controller="ListCtrl as list" class="panel panel-info">
+    <p ng-repeat="message in list.messages">{{ message.text }}</p>
+</div>
+<h3>Array Filter(By Name)</h3>
+<div ng-controller="arrayController">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="value in namearray | orderBy: 'name':false">
+          <td>{{ value.id }}</td>
+          <td>{{ value.name }}</td>   
+        </tr>
+      </tbody>  
+    </table>
+</div>
