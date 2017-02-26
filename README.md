@@ -24,7 +24,7 @@ These instructions will get you a copy of the project up and running on your loc
   ```
     npm start
   ```
-  #Another Way is to run the server is(python mustbe installed on your machine)
+  ### Another Way is to run the server is(python mustbe installed on your machine)
   ```
     python -m SimpleHTTPServer 8008
     
