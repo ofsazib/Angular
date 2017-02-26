@@ -24,12 +24,12 @@ These instructions will get you a copy of the project up and running on your loc
   ```
     npm start
   ```
-  ### Another Way is to run the server is(python mustbe installed on your machine)
+### Another Way is to run the server is(python mustbe installed on your machine)
   ```
     python -m SimpleHTTPServer 8008
     
   ```
- 5. Now Open your browser and enter
+  5. Now Open your browser and enter
   ```
     http://localhost:8000(port can be different depending on your server port)
   ```
